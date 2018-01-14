@@ -89,7 +89,7 @@ function endGame(){
 function callServer(_data){
 	var _copy = _data;
 	$.ajax({
-		url: "http://codingthecrowd.com/counter.php",
+		url: "https://codingthecrowd.com/counter.php",
 		dataType: "jsonp",
 		data: {
 			key: "garfield"+mode,
@@ -226,7 +226,7 @@ $(".start-btn").click(function(){
 	if($(this).hasClass("disabled")) return;
 	_data = {ship:2,alive:true,idle:idle,interaction:interaction,reputation:reputation};
 	$.ajax({
-		url: "http://codingthecrowd.com/counter.php",
+		url: "https://codingthecrowd.com/counter.php",
 		//url: "http://utakutik.us/crowdprogramming/crowdcounter.php",
 		dataType: "jsonp",
 		data: {
